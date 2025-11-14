@@ -2,83 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Resume Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tanisha Dhami — Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
 
-    <h1>My Resume</h1>
+<div class="resume-container">
+    <header class="hero">
+        <div class="photo-wrapper" aria-hidden="true">
+            <!-- The background-image will load if you put a file named `photo.jpg` next to this HTML file. Otherwise initials are shown. -->
+            <div class="photo" style="background-image: url('photo.jpg')">TD</div>
+        </div>
+        <div class="hero-text">
+            <h1 class="name">Tanisha Dhami</h1>
+            <p class="subtitle">Computer Science student — Artificial Intelligence | University of Waterloo</p>
+        </div>
+    </header>
 
-    <h2>About Me</h2>
-    <p>Hi! I'm Tanisha, a Computer Science student specializing in AI at the University of Waterloo.</p>
+    <main>
+        <section class="section about">
+            <h2>About Me</h2>
+            <p>Hi! I'm Tanisha, a Computer Science student specializing in AI at the University of Waterloo.</p>
+        </section>
 
-    <h2>Experience</h2>
+        <section class="section">
+            <h2>Experience</h2>
 
-    <h3>Software Engineer Intern – Rippling (May 2025 – Aug 2025)</h3>
-    <p>Worked on banking-related internal tools, improving visibility, debugging, and data flows.</p>
-    <ul>
-        <li>Designed and built the complete internal console for a new Banking product using Django (Python), Typescript, and MongoDB.</li>
-        <li>Implemented end-to-end tracking and debugging of applications and payment requests using Temporal.</li>
-        <li>Enabled monthly account statement generation and automated user email workflows with role-based permissions.</li>
-    </ul>
+            <article class="job">
+                <h3>Software Engineer Intern – Rippling <span class="muted">(May 2025 – Aug 2025)</span></h3>
+                <p>Worked on banking-related internal tools, improving visibility, debugging, and data flows.</p>
+                <ul>
+                    <li>Designed and built the complete internal console for a new Banking product using Django (Python), TypeScript, and MongoDB.</li>
+                    <li>Implemented end-to-end tracking and debugging of applications and payment requests using Temporal.</li>
+                    <li>Enabled monthly account statement generation and automated user email workflows with role-based permissions.</li>
+                </ul>
+            </article>
 
-    <h3>Software Engineer Intern – Secoda (Jan 2025 – Apr 2025)</h3>
-    <p>Created analytics and automation tooling for enterprise data discovery.</p>
-    <ul>
-        <li>Built analytics dashboard by storing metrics in S3 from nightly Celery tasks and displaying them as widgets using React and Typescript.</li>
-        <li>Generated dynamic cover images using asynchronous cron jobs.</li>
-        <li>Improved prompt engineering and integrated Anthropic models by structuring JSON outputs.</li>
-    </ul>
+            <article class="job">
+                <h3>Software Engineer Intern – Secoda <span class="muted">(Jan 2025 – Apr 2025)</span></h3>
+                <p>Created analytics and automation tooling for enterprise data discovery.</p>
+                <ul>
+                    <li>Built analytics dashboard by storing metrics in S3 from nightly Celery tasks and displaying them as widgets using React and TypeScript.</li>
+                    <li>Generated dynamic cover images using asynchronous cron jobs.</li>
+                    <li>Improved prompt engineering and integrated Anthropic models by structuring JSON outputs.</li>
+                </ul>
+            </article>
 
-    <h3>Software Engineer Intern – Console One (May 2024 – Aug 2024)</h3>
-    <p>Delivered full-stack features supporting collaboration, search, and platform growth.</p>
-    <ul>
-        <li>Independently built full-stack features using React.js, JavaScript, AWS, Redis, and Neo4j.</li>
-        <li>Added functionality for shared workspaces and publishing to a community.</li>
-        <li>Designed and built robust vector search with pagination for efficient data retrieval.</li>
-    </ul>
+            <article class="job">
+                <h3>Software Engineer Intern – Console One <span class="muted">(May 2024 – Aug 2024)</span></h3>
+                <p>Delivered full-stack features supporting collaboration, search, and platform growth.</p>
+                <ul>
+                    <li>Independently built full-stack features using React.js, JavaScript, AWS, Redis, and Neo4j.</li>
+                    <li>Added functionality for shared workspaces and publishing to a community.</li>
+                    <li>Designed and built robust vector search with pagination for efficient data retrieval.</li>
+                </ul>
+            </article>
 
-    <h3>Full-Stack Developer & Research Assistant – University of Waterloo (May 2023 – Aug 2023)</h3>
-    <p>Supported research on rhetorical structures and helped build tools for data annotation.</p>
-    <ul>
-        <li>Annotated literary figures for training LLMs and resolved issues related to annotation quality.</li>
-        <li>Worked with Golang, React, MySQL, and Docker on research tooling.</li>
-        <li>Contributed part-time as part of the “Rhetoricon” research project.</li>
-    </ul>
+            <article class="job">
+                <h3>Full-Stack Developer & Research Assistant – University of Waterloo <span class="muted">(May 2023 – Aug 2023)</span></h3>
+                <p>Supported research on rhetorical structures and helped build tools for data annotation.</p>
+                <ul>
+                    <li>Annotated literary figures for training LLMs and resolved issues related to annotation quality.</li>
+                    <li>Worked with Golang, React, MySQL, and Docker on research tooling.</li>
+                    <li>Contributed part-time as part of the “Rhetoricon” research project.</li>
+                </ul>
+            </article>
 
-    <h3>Backend Developer – Matrice.ai (May 2023 – Aug 2023)</h3>
-    <p>Worked across backend, ML data pipelines, and front-end integrations.</p>
-    <ul>
-        <li>Served as the primary engineer on the Python SDK and reviewed team code.</li>
-        <li>Added ML dataset transfer from Amazon S3 to MongoDB using Golang.</li>
-        <li>Implemented corresponding UI features in JavaScript to support dataset workflows.</li>
-    </ul>
+            <article class="job">
+                <h3>Backend Developer – Matrice.ai <span class="muted">(May 2023 – Aug 2023)</span></h3>
+                <p>Worked across backend, ML data pipelines, and front-end integrations.</p>
+                <ul>
+                    <li>Served as the primary engineer on the Python SDK and reviewed team code.</li>
+                    <li>Added ML dataset transfer from Amazon S3 to MongoDB using Golang.</li>
+                    <li>Implemented corresponding UI features in JavaScript to support dataset workflows.</li>
+                </ul>
+            </article>
+        </section>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Kotlin mobile app.</li>
-        <li>Interactive C++ chess game with AI mode.</li>
-        <li>Convolutional neural network for spiking neurons.</li>
-        <li>Hosted a 10-week live Scratch course on YouTube titled “Starting from Scratch.”</li>
-        <li>More projects available on my website.</li>
-    </ul>
+        <section class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>Kotlin mobile app.</li>
+                <li>Interactive C++ chess game with AI mode.</li>
+                <li>Convolutional neural network for spiking neurons.</li>
+                <li>Hosted a 10-week live Scratch course on YouTube titled “Starting from Scratch.”</li>
+                <li>More projects available on my website.</li>
+            </ul>
+        </section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Languages: Python, C, C++, Java, JavaScript, TypeScript, SQL, R, Kotlin, Go</li>
-        <li>Technologies: TensorFlow, Git, React, Linux, Bash scripting, MongoDB</li>
-        <li>Concepts: Data Structures, Algorithms, Machine Learning</li>
-    </ul>
+        <section class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages: Python, C, C++, Java, JavaScript, TypeScript, SQL, R, Kotlin, Go</li>
+                <li>Technologies: TensorFlow, Git, React, Linux, Bash scripting, MongoDB</li>
+                <li>Concepts: Data Structures, Algorithms, Machine Learning</li>
+            </ul>
+        </section>
 
-    <h2>New Skills From This Micro-Course</h2>
-    <ul>
-        <li>Used generative AI to write and debug simple HTML/CSS faster.</li>
-        <li>Learned how to prompt AI tools to create clean layouts and boilerplate code.</li>
-        <li>Improved workflow by combining GitHub, Codespaces, and AI for rapid development.</li>
-        <li>Practiced iterating on designs by asking AI to refine structure and formatting.</li>
-    </ul>
+        <section class="section">
+            <h2>New Skills From This Micro-Course</h2>
+            <ul>
+                <li>Used generative AI to write and debug simple HTML/CSS faster.</li>
+                <li>Learned how to prompt AI tools to create clean layouts and boilerplate code.</li>
+                <li>Improved workflow by combining GitHub, Codespaces, and AI for rapid development.</li>
+                <li>Practiced iterating on designs by asking AI to refine structure and formatting.</li>
+            </ul>
+        </section>
 
-    <h2>Contact</h2>
-    <p>Email: tsdhami@uwaterloo.ca</p>
+        <section class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:tsdhami@uwaterloo.ca">tsdhami@uwaterloo.ca</a></p>
+        </section>
+    </main>
+
+    <footer class="footer muted">Last updated: November 2025</footer>
+</div>
 
 </body>
 </html>
